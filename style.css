@@ -1,0 +1,23 @@
+:root{--bg:#0C0D10;--card:#161920;--fg:#F2F0E9;--mut:#9A9890;--line:#272C36;--line2:#333947;
+--acc:#C6F135;--r:18px;--font-d:'Unbounded','Manrope',sans-serif;--font-b:'Manrope',system-ui,sans-serif;--font-m:'JetBrains Mono',monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 var(--font-b)}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.hdr{padding:26px 0;border-bottom:1px solid var(--line)}
+.brand{font-family:var(--font-d);font-weight:800;font-size:18px;letter-spacing:-.02em;display:inline-flex;align-items:center;gap:10px}
+.brand i{width:12px;height:12px;background:var(--acc);transform:rotate(45deg);border-radius:3px;display:inline-block}
+h1{font-family:var(--font-d);font-weight:800;font-size:clamp(30px,5vw,52px);line-height:1.08;letter-spacing:-.035em;margin:44px 0 14px;max-width:18ch}
+h1 span{color:var(--acc)}
+p.lead{color:var(--mut);max-width:52ch;margin:0 0 36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;padding-bottom:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 18px 20px;transition:.2s;display:flex;flex-direction:column;gap:6px}
+.card:hover{border-color:var(--acc);transform:translateY(-2px)}
+.card .eb{font-family:var(--font-m);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc)}
+.card b{font-family:var(--font-d);font-weight:700;font-size:18px}
+.card small{color:var(--mut);font-size:13px}
+.games{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 46px}
+.gbtn{font-family:var(--font-m);font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:10px 16px;border:1px solid var(--line2);border-radius:999px;color:var(--mut);transition:.2s}
+.gbtn:hover{background:var(--acc);color:var(--bg);border-color:var(--acc)}
+.sec-h{font-family:var(--font-m);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);margin:34px 0 14px}
+.ft{border-top:1px solid var(--line);margin-top:40px;padding:26px 0 40px;color:#6C6A64;font-size:12.5px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
